@@ -61,7 +61,6 @@ $(document).on('ready', function() {
 
 // // Define a function called outputObject that takes an object as an argument and returns each key-value pair in the following format 'key .
 
-// //I'M AN IDIOT
 // var ages = {john: 10, jerry: 11, jenny: 12 };
 
 // function outputObject(object){
@@ -104,29 +103,35 @@ $(document).on('ready', function() {
 
 // Define a function called captureTwins that takes an array as an argument and returns true if every adjacent pair of items in the array is the same, otherwise return false.
 
-function captureTwins(array){
-  for (var i = 0; i < array.length; i++) {
-    if (array[i]===array[i+1]) {
-      return true;
-    }else{
-      return false;
-    }
+// function captureTwins(array){
+//   for (var i = 0; i < array.length; i++) {
+//     if (array[i]===array[i+1]) {
+//       return true;
+//     }else{
+//       return false;
+//     }
 
-  }
-}
+//   }
+// }
 
-console.log(captureTwins(['m', 'm', 'n', 'n', 's', 's']), // => true
-captureTwins(['m', 'm', 'm', 'n', 's', 's'])); // => false
+// console.log(captureTwins(['m', 'm', 'n', 'n', 's', 's']), // => true
+// captureTwins(['m', 'm', 'm', 'n', 's', 's'])); // => false
 
 
 // Define a function called testBooleanLogic that takes an array of boolean values and returns true if any value is true.
 
 function testBooleanLogic(array){
+  for (var i = 0; i < array.length; i++) {
+    if(array[i] === true){
 
+    }else{
+
+    }
+  };
 
 }
-testBooleanLogic([false, true, false, false]); // => true
-testBooleanLogic([false, false, false]); // =>  false
+console.log(testBooleanLogic([false, true, false, false]), // => true
+testBooleanLogic([false, false, false])); // =>  false
 
 
 
